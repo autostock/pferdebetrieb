@@ -8851,8 +8851,8 @@ very-muted-foreground: #888888</pre>
 <div created="20171023151021531" modified="20171025052157388" title="$:/state/tab/moresidebar-401116514">
 <pre>$:/core/ui/MoreSideBar/Tags</pre>
 </div>
-<div created="20171023121601022" modified="20171031141300209" title="$:/state/tab/sidebar--1835078512">
-<pre>$:/core/ui/SideBar/Recent</pre>
+<div created="20171023121601022" modified="20171031164452640" title="$:/state/tab/sidebar--1835078512">
+<pre>Inhalt</pre>
 </div>
 <div created="20171023133017380" modified="20171025051707343" title="$:/state/tabs/controlpanel/toolbars-1345989671">
 <pre>$:/core/ui/ControlPanel/Toolbars/ViewToolbar</pre>
@@ -9906,11 +9906,39 @@ Juraforum.de&lt;/a&gt;
 
 &lt;/div&gt;</pre>
 </div>
-<div created="20171031132439650" modified="20171031132531089" tags="" title="IT-Technik">
+<div created="20171031132439650" modified="20171031164445635" tags="" title="IT-Technik">
 <pre>!Installiere Tools auf Ubuntu
-* Installiere &quot;Git Cola&quot;
-* Klone &quot;https://github.com/autostock/pferdebetrieb&quot; lokal nach z.B. &quot;GitHub&quot;
-* Starte mit FireFox: file:///home/uwe/GitHub/pferdebetrieb/index.html</pre>
+!!Mit dem GitHub Account eine Projekt Webseite anlegen
+Siehe: https://pages.github.com/
+
+!! Installiere und konfiguriere git
+```bash
+sudo apt-get install git-all
+git config --global user.name &quot;user_name&quot;
+git config --global user.email &quot;email_id&quot;
+```
+!! Klone Repository
+```bash
+mkdir GitHub
+cd GitHub
+git clone https://github.com/UweUndWiebke/pferdebetrieb
+cd pferdebetrieb/
+git branch -a
+git fetch
+git checkout gh-pages
+```
+!! Commit&amp;Push Repository
+```bash
+git status
+git commit -a -m &quot;ein kommentar&quot;
+git push
+```
+
+!FireFox
+!!Installiere TiddlyFox
+https://addons.mozilla.org/de/firefox/addon/tiddlyfox/
+
+Starte mit FireFox mit : file:///home/uwe/GitHub/pferdebetrieb/index.html</pre>
 </div>
 <div created="20171023115049848" modified="20171023150906221" tags="Inhalt" title="Kontakt">
 <pre>&lt;!-- alte NC Id: 12901 --&gt;
